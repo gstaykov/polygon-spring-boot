@@ -11,7 +11,7 @@ public class Controller
     @GetMapping("/test")
     public String testPolygon()
     {
-        String polygonKey = "COrjZBVMfKHQpK2S9EfW0ngvNgxpgWow";
+        String polygonKey = "API_KEY";
         PolygonRestClient client = new PolygonRestClient(polygonKey);
         MarketsDTO markets = client.getReferenceClient().getSupportedMarketsBlocking();
         System.out.println("Got markets synchronously: " + markets.toString());
